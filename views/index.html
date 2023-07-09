@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/ea94855ddc.js" crossorigin="anonymous"></script>
+    <title>Social Media Frontend</title>
+</head>
+
+<body>
+    <nav>
+        <span class="left-nav">
+            <h3 class="logo red ml-m">Be</h3><h3 class="logo ml-s">Social</h3>
+        </span>
+        <span class="right-nav">
+            <input type="search" name="search" class="search" id="search" placeholder="Search here..."/>
+            <button class="s-btn btn-primary" onclick="showPostBox()">post</button>
+        </span>
+    </nav>
+    <div class="uploadBox d-none" id="upload-Box">
+        <form action="" id="fileUploader">
+            <input type="file" name="image" id="imageInput" class="custom-file-input"/>
+            <button type="submit" class="btn btn-primary m-auto">Upload</button>
+        </form>
+        <p id="error-box" class="font-s" style="text-align: center;color: red;"></p>
+    </div>
+    <div class="container">
+        <div class="left-content">
+            <div class="profile-info" id="profile-info">
+                
+            </div>
+            <div class="links">
+                <ul>
+                    <li class="link"><i class="fa-solid fa-home"></i><a href="#" class="link">Home</a></li>
+                    <li class="link"><i class="fa-solid fa-users"></i><a href="#" class="link" id="likeCounter">likes: 0</a></li>
+                    <li class="link"><i class="fa-solid fa-image"></i><a href="#" class="link">Photos</a></li>
+                    <li class="link"><i class="fa-solid fa-circle-user"></i><a href="#" class="link">Profile</a></li>
+                    <li class="link"><i class="fa-solid fa-gear"></i><a href="#" class="link">Setting</a></li>
+                    <li class="link"><i class="fa-solid fa-gear"></i><a href="/logOut" class="link">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content" id="posts-field">
+            
+        </div>
+        <div class="right-content">
+            <div class="req-container">
+                <h3 class="m-10 color font-s">REQUEST</h3>
+                <div class="box" id="RequestField">
+                    
+                </div>
+            </div>
+            <div class="contact-container">
+                <h3 class="m-10 color font-s">FOLLOW</h3>
+                <div class="box" id="FollowField">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascripts/page-controller.js"></script>
+</body>
+
+</html>
